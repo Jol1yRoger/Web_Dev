@@ -1,0 +1,77 @@
+@keyframes removeAnimation {
+    0%{
+        transform: scale(1);
+        /* background-size: cover; */
+    }
+
+    25%{
+        transform: scale(0.87);
+    }
+
+    37%{
+        transform: scale(0.75);
+        background-image: url("cross.png"); 
+             
+    }
+
+    50%{
+        transform: scale(0.2);
+        background-image: none;
+        /* background-color: black;
+        border-radius: 50px; */
+
+    }
+
+    75%{
+        transform: scale(0.75);
+        background-image: url("cross_black.png");
+    }
+
+    87%{
+        transform: scale(0.87);
+    }
+
+    100%{
+        transform: scale(1);
+        /* background-size: 11px; */
+    }
+}
+
+
+@keyframes checkAnimation {
+    0%{
+        transform: scale(1);
+        /* background-size: cover; */
+    }
+
+    25%{
+        transform: scale(0.87);
+    }
+
+    37%{
+        transform: scale(0.75);
+        background-image: url("check.png"); 
+             
+    }
+
+    50%{
+        transform: scale(0.2);
+        background-image: none;
+        /* background-color: black;
+        border-radius: 50px; */
+
+    }
+
+    75%{
+        transform: scale(0.75);
+        background-image: url("check_black.png");
+    }
+
+    87%{
+        transform: scale(0.87);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}

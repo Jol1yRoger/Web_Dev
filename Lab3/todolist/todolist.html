@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/keyframes.css">
+</head>
+<body>
+    <header class="box">
+        <div class="inHeader box-limit">
+            <h1>To Do List</h1> 
+            <button id="resultsButton">
+                The Road So Far
+            </button>
+        </div>
+    </header>
+
+    <div class="mainToDo box">
+        <div class="inMainToDo box-limit">
+            <div class="mainHeader">
+                <buttton class="checkAllTasks"></buttton>
+                <h2>Your tasks</h2>
+                <button class="removeAllTasks"></button>
+            </div>
+            
+            <!-- <button id="callAddTaskWindow">New task</button> -->
+            <input type="text" id="inputTask" placeholder="Add a Task">
+            <ul id="allTasks">
+                
+            </ul>
+
+            <div class="tasks">
+            </div>        
+        </div>
+
+    </div>
+
+
+
+    <div id="results">
+        <div class="inResults">
+            <ul id="doneTasks">
+
+            </ul>
+
+            <ul id="removedTasks">
+
+            </ul>
+
+            <div id="graph">
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- <div id="addScreen">
+        <div class="addWindow">
+            <div class="addWindowHeader">
+                <button id="closeAddTaskWindow">
+                </button>
+            </div>
+            <input type="text" id="inputTask" placeholder=" Enter a task">
+            <button id="addTask">
+                Add Task
+            </button>
+        </div>
+    </div> -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
