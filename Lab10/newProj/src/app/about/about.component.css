@@ -1,0 +1,34 @@
+
+
+header{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
+  border-radius: 7px;
+  font-family: sans-serif;
+}
+
+h1{
+  margin: 0 0 0 10px;
+  color: white;
+  font-size: 100px;
+}
+
+header div a{
+  color: white;
+  font-size: 35px;
+}
+
+header div{
+  width: 390px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px 0 0;
+}

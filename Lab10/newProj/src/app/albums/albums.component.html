@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<nav class="navv">
+  <a class="homeLink" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Kaspi2</a>
+  
+  <div>
+      <a class="infoLink" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">Info</a>
+      <a class="categories" routerLink="/categories">Categories</a>
+  </div>
+
+</nav>
+<br>
+<div class="mainAlb">
+  <div class="product" *ngFor="let item of products">
+    <a [href]="item.link">
+      <div>
+        {{item.name}} 
+      </div>
+      <img src="{{item.imageUrl}}">
+      <div>
+        Category: {{item.category}} 
+      </div>    
+
+      <div>
+        Description: {{item.description}}
+      </div>
+
+      <div>
+        Price: {{item.price}}
+      </div>
+    </a>
+
+
+  </div> 
+
+
+
+</div>
+
+<!-- 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<nav class="navv">
+  <a class="homeLink" routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Kaspi2</a>
+  
+  <div>
+      <a class="infoLink" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">Info</a>
+      <a class="categories" routerLink="/categories">Categories</a>
+  </div>
+
+</nav>
+<br>
+<div style="display: flex; flex-direction: column;">
+  <div class="productBack" *ngFor="let item of data">
+    <div class="productId"> Id: {{item.id}} </div>
+    <div class="productTitle"> Title: <a [routerLink]="['/albums', item.id]">{{item.title}}</a> </div>
+    <div> User: {{item.userId}} </div>
+    <button type="button" (click)="delete(item)"><i class="fa fa-trash" aria-hidden="true"></i></button>
+    <hr>
+  </div>
+</div> -->
